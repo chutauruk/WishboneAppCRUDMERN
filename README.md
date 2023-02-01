@@ -2,16 +2,17 @@
 
 # Wishbone App
 
-<img width=“400” alt=“Wishbone App Icon” src=“https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/WishboneIcon.jpg”>
+![Wishbone App Icon](https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/WishboneIcon.jpg”)
 
-<img width=“400” alt=“Wishbone App Screenshot” src=“https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/wishboness.JPG”>
+![Wishbone App Screenshot](https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/wishboness.JPG”)
 
 ## Introduction
 
 This project is intended for use by dog rescue personnel for process optimization in preparing a dog for adoption. The user is intended to be a foster parent using credentials provided by the rescue director on the Login page. The app takes into consideration the user's location to pinpoint a nearby Meet and Greet event to introduce the dog to the public. Following the Login page, a Create Profile page accepts information, displays all submitted information in the All Dogs List page, updates and deletions can be made on the same page to keep profiles current.
 
 **Trello**
-<img width=“400” alt=“Trello Screenshot” src=“https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/TrelloSS.JPG”>
+
+![Trello Screenshot](https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/TrelloSS.JPG”)
 
 **DB Schema and Model**
 
