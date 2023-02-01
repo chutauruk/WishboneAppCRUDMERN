@@ -2,9 +2,9 @@
 
 # Wishbone App
 
-![Wishbone App Icon](https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/WishboneIcon.jpg”)
+![Wishbone App Icon](https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/WishboneIcon.jpg)
 
-![Wishbone App Screenshot](https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/wishboness.JPG”)
+![Wishbone App Screenshot](https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/wishboness.JPG)
 
 ## Introduction
 
@@ -12,7 +12,7 @@ This project is intended for use by dog rescue personnel for process optimizatio
 
 **Trello**
 
-![Trello Screenshot](https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/TrelloSS.JPG”)
+![Trello Screenshot](https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/TrelloSS.JPG)
 
 **DB Schema and Model**
 
