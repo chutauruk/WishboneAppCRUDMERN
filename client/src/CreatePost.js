@@ -41,7 +41,7 @@ function CreatePost() {
     event.preventDefault();
 
     axios
-      .post("/create", post)
+      .post("https://wishbone-app.onrender.com/create", post)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 

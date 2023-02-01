@@ -3,8 +3,7 @@ import axios from "axios";
 import { Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
-import FileBase from 'react-file-base64';
-
+import FileBase from "react-file-base64";
 
 function Posts() {
   const navigate = useNavigate();
@@ -33,7 +32,7 @@ function Posts() {
 
   useEffect(() => {
     axios
-      .get("/posts")
+      .get("https://wishbone-app.onrender.com/posts")
       .then((res) => {
         console.log(res);
         setPosts(res.data);
@@ -43,7 +42,7 @@ function Posts() {
 
   const deletePost = (id) => {
     axios
-      .delete(`/delete/${id}`)
+      .delete(`https://wishbone-app.onrender.com/delete/${id}`)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
@@ -65,7 +64,10 @@ function Posts() {
 
   const saveUpdatedPost = () => {
     axios
-      .put(`/update/${updatedPost._id}`, updatedPost)
+      .put(
+        `https://wishbone-app.onrender.com/update/${updatedPost._id}`,
+        updatedPost
+      )
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
@@ -178,10 +180,12 @@ function Posts() {
                 onChange={handleChange}
               />
               <FileBase
-               type = "file"
-               multiple={false}
-               onDone={({base64}) => setUpdatedPost({ ...updatedPost, selectedFile: base64})}
-               />
+                type="file"
+                multiple={false}
+                onDone={({ base64 }) =>
+                  setUpdatedPost({ ...updatedPost, selectedFile: base64 })
+                }
+              />
             </Form.Group>
           </Form>
         </Modal.Body>
@@ -199,7 +203,8 @@ function Posts() {
         <>
           {posts.map((post) => {
             return (
-              <div class="doodle"
+              <div
+                class="doodle"
                 key={post._id}
                 style={{
                   border: "solid lightgray 1px",
@@ -210,7 +215,7 @@ function Posts() {
               >
                 <h2>{post.status}</h2>
                 <h1>{post.name}</h1>
-                <img src={post.selectedFile} alt="New Dog Added" />  
+                <img src={post.selectedFile} alt="New Dog Added" />
                 <p>{post.age}</p>
                 <p>{post.gender}</p>
                 <p>{post.breed}</p>
@@ -221,7 +226,6 @@ function Posts() {
                 <p>{post.vaccinated}</p>
                 <p>{post.description}</p>
                 <p>{post.historylog}</p>
-                
 
                 <div
                   style={{
