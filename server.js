@@ -9,13 +9,13 @@ const app = express();
 // app.use(bodyParser.json({limit: "30mb", extended: true}))
 // app.use(bodyParser.urlencoded({limit: "30mb", extended: true}));
 app.use(express.json({limit: '50mb'}));
-app.use(express.urlencoded({limit: '50mb'}));
+// app.use(express.urlencoded({limit: '50mb'}));
 // app.use(express.urlencoded({ extended: false } ));
 app.use(cors());
 
 
 //MongoDB Config
-// mongoose.set("strictQuery", true);
+mongoose.set("strictQuery", true);
 
 mongoose
   .connect("mongodb+srv://chutauru:m33kv41n@chutaurucluster.nuaxuh3.mongodb.net/?retryWrites=true&w=majority")
@@ -63,7 +63,7 @@ app.post("/create", (req, res) => {
   })
     newPost.save()
     .then((doc) => console.log(doc))
-    .catch((err) => log);
+    .catch((err) => console.log(err));
 });
 
 app.get("/posts", (req, res) => {

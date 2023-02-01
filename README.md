@@ -1,16 +1,20 @@
 # WishboneAppCRUDMERN
-Wishbone App
-===
-<img width=“964” alt=“Wishbone App Icon” src=“https://github.com/jaimehernan95/arrayReview-java/blob/master/images/%20arrayExample.png”>
 
-Introduction
----
-This project is intended for use by dog rescue personnel for process optimization in preparing a dog for adoption. The user is intended to be a foster parent using credentials provided by the rescue director on the Login page. The app takes into consideration the user's location to pinpoint a nearby Meet and Greet event to introduce the dog to the public. Following the Login page, a Create Profile page accepts information, displays all submitted information in the All Dogs List page, updates and deletions can be made on the same page to keep profiles current.  
+# Wishbone App
+
+<img width=“400” alt=“Wishbone App Icon” src=“https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/WishboneIcon.jpg”>
+
+<img width=“400” alt=“Wishbone App Screenshot” src=“https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/wishboness.JPG”>
+
+## Introduction
+
+This project is intended for use by dog rescue personnel for process optimization in preparing a dog for adoption. The user is intended to be a foster parent using credentials provided by the rescue director on the Login page. The app takes into consideration the user's location to pinpoint a nearby Meet and Greet event to introduce the dog to the public. Following the Login page, a Create Profile page accepts information, displays all submitted information in the All Dogs List page, updates and deletions can be made on the same page to keep profiles current.
 
 **Trello**
-<image>
+<img width=“400” alt=“Trello Screenshot” src=“https://github.com/chutauruk/WishboneAppCRUDMERN/blob/main/client/src/icons/TrelloSS.JPG”>
 
 **DB Schema and Model**
+
 ```
 const postSchema = mongoose.Schema({
   status: String,
@@ -33,6 +37,7 @@ const Post = mongoose.model("Post", postSchema);
 ```
 
 **Express Controller Method**
+
 ```
 const saveUpdatedPost = () => {
     axios
@@ -48,6 +53,7 @@ const saveUpdatedPost = () => {
 ```
 
 **React Modal Component**
+
 ```
 <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -160,6 +166,7 @@ const saveUpdatedPost = () => {
 ```
 
 **Client-side Routing**
+
 ```
       <Button
         variant="outline-dark"
@@ -169,10 +176,11 @@ const saveUpdatedPost = () => {
         BACK
       </Button>
 ```
+
 ---
 
-Author & Contributor List
----
+## Author & Contributor List
+
 Cynthia Hutauruk
 
 Nhan Khang Le
@@ -189,8 +197,8 @@ Will Spina
 
 ---
 
-Technologies Used
----
+## Technologies Used
+
 Technologies:
 VSCode, MongoDB, HTML5, CSS3, Javascript
 
@@ -206,22 +214,24 @@ Axios, CORS
 ---
 
 Getting Started
---- 
-The project was planned on a [Trello Board](https://trello.com/b/zqqBSEoa/wishbone-mern-app) and available on [Render](www.google.com).
 
 ---
 
-Unsolved Problems
+The project was planned on a [Trello Board](https://trello.com/b/zqqBSEoa/wishbone-mern-app) and available on [Netlify](https://chutauru.netlify.app/).
+
 ---
+
+## Unsolved Problems
+
 Form alignment reorganization of active versus inactive dogs.
 
 All other known bugs and fixes can be sent to [cyn.uruk@gmail.com](cyn.uruk@gmail.com).
 
 ---
 
-Future Enhancements
----
-1. Listing a calendar or automate updates of upcoming Meet and Greet events. 
+## Future Enhancements
+
+1. Listing a calendar or automate updates of upcoming Meet and Greet events.
 2. A wishlist supply request for each active dog emailed to the rescue director.
 3. User authentication on the Login page.
 4. User logout on the Create Profile and All Dogs List page.
