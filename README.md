@@ -218,7 +218,7 @@ Getting Started
 
 ---
 
-The project was planned on a [Trello Board](https://trello.com/b/zqqBSEoa/wishbone-mern-app) and available on [Netlify](https://chutauru.netlify.app/).
+The project was planned on a [Trello Board](https://trello.com/b/zqqBSEoa/wishbone-mern-app) and available on [Render](https://wishboneapp.onrender.com/).
 
 ---
 
