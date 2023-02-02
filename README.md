@@ -201,7 +201,7 @@ Will Spina
 ## Technologies Used
 
 Technologies:
-VSCode, MongoDB, HTML5, CSS3, Javascript
+VSCode, MongoDB, HTML5, CSS3, Javascript, LucidChart, Figma, AdobeExpress, Trello, Asana
 
 Libraries:
 React.js, Mongoose ODM
